@@ -229,6 +229,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    cursor: pointer;
     gap: 8px;
 }
 .frame-wrapper1 {
@@ -316,6 +317,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     color: #555;
 }
 .text-121 {
@@ -388,6 +390,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     padding: 16px;
@@ -470,6 +473,7 @@ body {
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
+    cursor: pointer;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -699,6 +703,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    cursor: pointer;
     gap: 16px;
     font-size: 14px;
     font-family: 'Red Hat Display';
@@ -732,12 +737,10 @@ body {
     position: relative;
     height: 1024px;
     overflow: hidden;
-    max-width: 90%;
+    max-width: 100%;
     max-height: 100%;
     text-align: left;
     font-size: 24px;
     color: #202025;
     font-family: 'Red Hat Display';
 }
-
-
