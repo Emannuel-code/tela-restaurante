@@ -70,6 +70,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    cursor: pointer;
     gap: 8px;
     color: #010101;
     font-family: 'Red Hat Display';
@@ -98,6 +99,7 @@ body {
     left: 1293px;
     height: 36px;
     display: flex;
+    cursor: pointer;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -106,6 +108,7 @@ body {
 }
 .keyboard-double-arrow-left-icon {
     position: absolute;
+    cursor: pointer;
     top: 23px;
     left: 96px;
     width: 24px;
@@ -141,6 +144,7 @@ body {
 .grid-view-icon {
     width: 24px;
     position: relative;
+    cursor: pointer;
     height: 24px;
 }
 .grid-view-wrapper {
