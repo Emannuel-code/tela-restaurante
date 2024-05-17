@@ -728,7 +728,7 @@ body {
     gap: 24px;
 }
 .perfil-edio {
-    width: 1340px;
+    width: 100%;
     position: relative;
     height: 1024px;
     overflow: hidden;
