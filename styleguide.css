@@ -1,0 +1,43 @@
+:root {
+  --neutrals-07: rgba(241, 244, 244, 1);
+  --neutrals-01: rgba(1, 1, 1, 1);
+  --neutrals-02: rgba(32, 32, 37, 1);
+  --neutrals-04: rgba(119, 121, 123, 1);
+  --neutrals-03: rgba(85, 85, 85, 1);
+  --neutrals06-linhas: rgba(220, 220, 220, 1);
+  --neutralswhite: rgba(255, 255, 255, 1);
+  --is-txt-med-semi-font-family: "Red Hat Text", Helvetica;
+  --is-txt-med-semi-font-weight: 500;
+  --is-txt-med-semi-font-size: 12px;
+  --is-txt-med-semi-letter-spacing: 0px;
+  --is-txt-med-semi-line-height: 100%;
+  --is-txt-med-semi-font-style: normal;
+  --is-h3-font-family: "Red Hat Display", Helvetica;
+  --is-h3-font-weight: 400;
+  --is-h3-font-size: 14px;
+  --is-h3-letter-spacing: 0px;
+  --is-h3-line-height: normal;
+  --is-h3-font-style: normal;
+  --is-txt-med-reg-font-family: "Red Hat Text", Helvetica;
+  --is-txt-med-reg-font-weight: 400;
+  --is-txt-med-reg-font-size: 12px;
+  --is-txt-med-reg-letter-spacing: 0px;
+  --is-txt-med-reg-line-height: normal;
+  --is-txt-med-reg-font-style: normal;
+  --themes-primary: rgba(126, 217, 87, 1);
+  --themes-background: rgba(241, 244, 244, 1);
+    --neutrals-02: rgba(32, 32, 37, 1);
+    --neutrals-03: rgba(85, 85, 85, 1);
+    --neutrals-07: rgba(241, 244, 244, 1);
+    --primary-01: rgba(126, 217, 87, 1);
+    --neutralswhite: rgba(255, 255, 255, 1);
+    --is-h3-font-family: "Red Hat Display", Helvetica;
+    --is-h3-font-weight: 400;
+    --is-h3-font-size: 14px;
+    --is-h3-letter-spacing: 0px;
+    --is-h3-line-height: normal;
+    --is-h3-font-style: normal;
+    --themes-primary: rgba(126, 217, 87, 1);
+    --themes-background: rgba(241, 244, 244, 1);
+}
+
