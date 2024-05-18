@@ -1,750 +1,1093 @@
-
-body {
-    margin: 0;
-    line-height: normal;
+.CONFIGURAO-DA-LOJA {
+  background-color: #f1f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-.popup-overlay {
+.CONFIGURAO-DA-LOJA .div {
+  background-color: var(--neutrals-07);
+  overflow: hidden;
+  width: 100%;
+  height: 950px;
+  position: relative;
+}
+
+.CONFIGURAO-DA-LOJA .overlap-group {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  left: 66px;
+  background-color: var(--neutrals-01);
+}
+
+.CONFIGURAO-DA-LOJA .frame {
+  display: flex;
+  width: 26.22px;
+  height: 24.35px;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  cursor: pointer;
+  top: 23px;
+  left: 85%;
+}
+
+@media (max-width: 1280px) {
+  .CONFIGURAO-DA-LOJA .frame {
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    inset: 0;
-}
-
-
-
-.configurao-da-loja-perfil-child {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: #010101;
-    width: 1368px;
-    height: 70px;
-}
-.alarm-bell-icon {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    z-index: 0;
-}
-.div {
-    position: relative;
-    font-weight: 500;
-}
-.wrapper {
-    border-radius: 59px;
-    background-color: #d0f4ea;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4px;
-}
-.frame-container {
-    display: flex;
-    flex-direction: row;
+    width: 26.22px;
+    height: 24.35px;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-.frame-wrapper {
-    margin: 0 !important;
-    position: absolute;
-    top: -3px;
-    left: 14px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    z-index: 1;
-}
-.alarm-bell-parent {
+    gap: 8px;
     position: absolute;
     top: 23px;
-    left: 1242px;
-    width: 26.2px;
-    height: 24.3px;
+    left: 80%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .CONFIGURAO-DA-LOJA .frame {
     display: flex;
-    flex-direction: row;
+    width: 26.22px;
+    height: 24.35px;
     align-items: flex-start;
-    justify-content: flex-start;
-    cursor: pointer;
     gap: 8px;
-    color: #010101;
-    font-family: 'Red Hat Display';
+    position: absolute;
+    top: 23px;
+    left: 80%;
+  }
 }
-.horas {
-    line-height: 100%;
-    font-weight: 500;
+
+.CONFIGURAO-DA-LOJA .alarm-bell {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
 }
-.text-12 {
-    position: relative;
+
+.CONFIGURAO-DA-LOJA .frame-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: absolute;
+  top: -3px;
+  left: 14px;
 }
-.text-12-wrapper {
-    align-self: stretch;
-    border-radius: 26px;
-    background-color: #d0f4ea;
-    border: 1px solid #d0f4ea;
-    display: flex;
-    flex-direction: row;
+
+.CONFIGURAO-DA-LOJA .div-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .frame-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #d0f4ea;
+  border-radius: 59px;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Display", Helvetica;
+  font-weight: 500;
+  color: var(--neutrals-01);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CONFIGURAO-DA-LOJA .frame-3 {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 17px;
+  left: 88%;
+}
+
+@media (max-width: 1340px) {
+  .CONFIGURAO-DA-LOJA .frame-3 {
+    display: inline-flex;
+    height: 36px;
     align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-}
-.configurao-da-loja-perfil-inner {
+    gap: 16px;
     position: absolute;
     top: 17px;
-    left: 1293px;
+    left: 85%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .CONFIGURAO-DA-LOJA .frame-3 {
+    display: inline-flex;
     height: 36px;
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    font-size: 12px;
-}
-.keyboard-double-arrow-left-icon {
-    position: absolute;
-    cursor: pointer;
-    top: 23px;
-    left: 96px;
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-.frame-child {
-    width: 31px;
-    position: relative;
-    border-radius: 6px;
-    height: 31px;
-    object-fit: cover;
-}
-.rectangle-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-.nav-colapsado-inner {
-    width: 72px;
-    background-color: #202025;
-    height: 70px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0px 20px;
-    box-sizing: border-box;
-}
-.grid-view-icon {
-    width: 24px;
-    position: relative;
-    cursor: pointer;
-    height: 24px;
-}
-.grid-view-wrapper {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 16px 0px;
-}
-.frame-item {
-    align-self: stretch;
-    position: relative;
-    border-top: 1px solid rgba(85, 85, 85, 0.4);
-    box-sizing: border-box;
-    height: 1px;
-}
-.frame-group {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 24px;
-}
-.frame-parent {
-    flex: 1;
-    background-color: #202025;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 56px 24px 32px;
-}
-.nav-colapsado {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 1024px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.image-4-icon {
-    width: 375px;
-    position: relative;
-    height: 236px;
-    object-fit: cover;
-}
-.group-child {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 51.5px);
-    border-radius: 50%;
-    background-color: #202025;
-    width: 103px;
-    height: 103px;
-}
-.image-5-icon {
-    position: absolute;
-    top: 13px;
-    left: 30px;
-    width: 43px;
-    height: 76px;
-    object-fit: cover;
-}
-.ellipse-parent {
-    width: 103px;
-    position: relative;
-    height: 103px;
-}
-.informaes-gerais {
-    position: relative;
-    line-height: 160%;
-    font-weight: 500;
-}
-.stylus-icon {
-    width: 20px;
-    position: relative;
-    height: 20px;
-}
-.informaes-gerais-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
-    gap: 8px;
-}
-.frame-wrapper1 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-.frame-child2 {
-    align-self: stretch;
-    position: relative;
-    border-top: 1px solid #dcdcdc;
-    box-sizing: border-box;
-    height: 1px;
-}
-.tat-sushi- {
-    font-weight: 600;
-}
-.tat-sushi-container {
-    position: relative;
-    line-height: 160%;
-}
-.tat-sushi-tat-sushi-alimen-parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 24px;
-}
-.frame-parent1 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 24px;
-}
-.image-4-parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 82px;
-}
-.categorias {
-    position: relative;
-    line-height: 160%;
-    font-weight: 600;
-}
-.ateno-as-categorias {
-    align-self: stretch;
-    position: relative;
-    font-size: 14px;
-    line-height: 160%;
-    color: #77797b;
-}
-.categorias-parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     gap: 16px;
-}
-.leite-c-parent {
-    flex: 1;
-    border-radius: 4px;
-    background-color: #f1f4f4;
-    height: 49px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 19px 16px;
-    box-sizing: border-box;
-}
-.frame-wrapper2 {
-    width: 246px;
-    height: 49px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: #555;
-}
-.text-121 {
-    position: relative;
-    line-height: 100%;
-    font-weight: 500;
-}
-.text-12-container {
-    align-self: stretch;
-    border-radius: 26px;
-    background-color: #d0f4ea;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-}
-.frame-wrapper4 {
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-.frame-wrapper3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    font-size: 12px;
-}
-.line-parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 32px;
-}
-.frame-wrapper7 {
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    font-size: 12px;
-}
-.frame-parent8 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
-}
-.frame-parent7 {
-    width: 323px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 32px;
-}
-.stylus-parent {
-    border-radius: 100px;
-    border: 1px solid #dcdcdc;
-    box-sizing: border-box;
-    height: 36px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    gap: 8px;
-    font-size: 14px;
-    font-family: 'Red Hat Display';
-}
-.text-12-wrapper4 {
-    align-self: stretch;
-    border-radius: 26px;
-    background-color: #f1f4f4;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-}
-.frame-parent11 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8px;
-    text-align: center;
-    font-size: 12px;
-}
-.frame-parent3 {
-    width: 592px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 32px;
-}
-.descrio-wrapper {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.o-tat-sushi {
-    flex: 1;
-    position: relative;
-    line-height: 160%;
-}
-.o-tat-sushi-comandado-pelos-wrapper {
-    align-self: stretch;
-    flex: 1;
-    border-radius: 4px;
-    background-color: #f1f4f4;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 32px 24px;
-}
-.frame-wrapper12 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    color: #555;
-}
-.frame-parent13 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-}
-.stylus-container {
-    border-radius: 100px;
-    border: 1px solid #dcdcdc;
-    box-sizing: border-box;
-    height: 36px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    gap: 8px;
-    font-size: 14px;
-    color: #202025;
-    font-family: 'Red Hat Display';
-}
-.segunda-sexta-das-11h00-at-parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.frame-parent15 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 8px;
-    font-size: 12px;
-    color: #555;
-    font-family: Inter;
-}
-.frame-parent12 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 32px;
-}
-.frame-parent2 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 48px;
-}
-.frame-div {
     position: absolute;
-    top: 118px;
-    left: 96px;
-    border-radius: 16px;
-    background-color: #fff;
-    width: 1320px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 24px 24px 48px;
-    box-sizing: border-box;
-    gap: 48px;
-    font-size: 16px;
-}
-.configurao-da-loja-perfil {
-    width: 100%;
-    position: relative;
-    background-color: #f1f4f4;
-    height: 1024px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 11px;
-    color: #202025;
-    font-family: 'Red Hat Text';
+    top: 17px;
+    left: 84%;
+  }
 }
 
 
-.frame-child7 {
-    align-self: stretch;
-    position: relative;
-    border-top: 1px solid #dcdcdc;
-    box-sizing: border-box;
-    height: 1px;
+.CONFIGURAO-DA-LOJA .frame-4 {
+  background-color: #d0f4ea;
+  border: 1px solid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  cursor: pointer;
+  flex: 0 0 auto;
+  border-radius: 26px;
 }
-.nome-da-restaurante {
-    position: relative;
-    line-height: 160%;
-    font-weight: 500;
+
+.CONFIGURAO-DA-LOJA .text {
+  position: relative;
+  width: fit-content;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-02);
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 12px;
+  white-space: nowrap;
 }
-.nome-da-restaurante-wrapper {
-    align-self: stretch;
+
+.CONFIGURAO-DA-LOJA .span {
+  font-family: var(--is-txt-med-reg-font-family);
+  font-weight: var(--is-txt-med-reg-font-weight);
+  color: #202025;
+  font-size: var(--is-txt-med-reg-font-size);
+  letter-spacing: var(--is-txt-med-reg-letter-spacing);
+  font-style: var(--is-txt-med-reg-font-style);
+  line-height: var(--is-txt-med-reg-line-height);
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-2 {
+  font-weight: var(--is-txt-med-semi-font-weight);
+  font-family: var(--is-txt-med-semi-font-family);
+  font-style: var(--is-txt-med-semi-font-style);
+  letter-spacing: var(--is-txt-med-semi-letter-spacing);
+  line-height: var(--is-txt-med-semi-line-height);
+  font-size: var(--is-txt-med-semi-font-size);
+}
+
+.CONFIGURAO-DA-LOJA .keyboard-double {
+  position: absolute;
+  width: 24px;
+  cursor: pointer;
+  height: 24px;
+  top: 23px;
+  left: 24px;
+}
+
+.CONFIGURAO-DA-LOJA .nav-colapsado {
+  position: absolute;
+  width: 80px;
+  height: 950px;
+  left: -7px;
+}
+
+.CONFIGURAO-DA-LOJA .frame-5 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 24px 24px 48px;
+  position: absolute;
+  top: 90px;
+  left: 126px;
+  background-color: var(--neutralswhite);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.CONFIGURAO-DA-LOJA .frame-6 {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+@media (max-width: 1920px) {
+  .CONFIGURAO-DA-LOJA .frame-6 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.tat-sushi-alimentos {
-    position: relative;
-    line-height: 160%;
-}
-.tat-sushi-alimentos-ltda-wrapper {
-    flex: 1;
-    border-radius: 4px;
-    background-color: #f1f4f4;
-    height: 49px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    padding: 19px 16px;
-    box-sizing: border-box;
-}
-.frame-wrapper14 {
-    align-self: stretch;
-    height: 49px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    color: #555;
-}
-.frame-parent17 {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-}
-.frame-wrapper15 {
-    align-self: stretch;
-    height: 49px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-.frame-parent18 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-}
-.endereo {
+    gap: 200px;
     position: relative;
-    font-size: 20px;
-    line-height: 160%;
-    font-family: 'Red Hat Display';
-}
-.frame-wrapper16 {
-    width: 162px;
-    height: 49px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-.rua {
     align-self: stretch;
-    position: relative;
-    line-height: 160%;
-    font-weight: 500;
-}
-.frame-wrapper17 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.frame-parent21 {
-    width: 334px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-}
-.frame-parent22 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-}
-.frame-parent20 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 8px;
-}
-.text-83 {
-    position: relative;
-}
-.text-8-wrapper {
-    flex: 1;
-    border-radius: 9px;
-    border: 1px solid #7ed957;
-    box-sizing: border-box;
-    height: 48px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
-}
-.text-8-container {
-    flex: 1;
-    border-radius: 9px;
-    background-color: #7ed957;
-    height: 48px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-.frame-parent26 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    cursor: pointer;
-    gap: 16px;
-    font-size: 14px;
-    font-family: 'Red Hat Display';
-}
-.frame-parent16 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 24px;
-    font-size: 16px;
-    font-family: 'Red Hat Text';
-}
-.informaes-gerais-group {
-    position: absolute;
-    top: calc(50% - 369px);
-    left: calc(50% - 282px);
-    border-radius: 16px;
-    background-color: #fff;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 32px;
-    gap: 24px;
-}
-.perfil-edio {
     width: 100%;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 1440px) {
+  .CONFIGURAO-DA-LOJA .frame-6 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
     position: relative;
-    height: 1024px;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-    text-align: left;
-    font-size: 24px;
-    color: #202025;
-    font-family: 'Red Hat Display';
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 1340px) {
+  .CONFIGURAO-DA-LOJA .frame-6 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .CONFIGURAO-DA-LOJA .frame-6 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  .CONFIGURAO-DA-LOJA .group {
+    position: relative;
+    width: 10%;
+    height: 10%;
+    background-color: var(--neutrals-02);
+    border-radius: 51.5px;
+  }
+}
+
+.CONFIGURAO-DA-LOJA .image {
+  position: relative;
+  width: 375px;
+  height: 236px;
+}
+
+.CONFIGURAO-DA-LOJA .group {
+  position: relative;
+  width: 103px;
+  height: 103px;
+  background-color: var(--neutrals-02);
+  border-radius: 51.5px;
+}
+
+.CONFIGURAO-DA-LOJA .img {
+  position: absolute;
+  width: 43px;
+  height: 76px;
+  top: 13px;
+  left: 30px;
+  object-fit: cover;
+}
+
+.CONFIGURAO-DA-LOJA .frame-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.CONFIGURAO-DA-LOJA .frame-8 {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .frame-9 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  bottom: 20px;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 500;
+  color: var(--neutrals-02);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+.CONFIGURAO-DA-LOJA .stylus {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.CONFIGURAO-DA-LOJA .line {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.CONFIGURAO-DA-LOJA .frame-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .tat-sushi-tat-sushi {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-02);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-4 {
+  font-weight: 600;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-5 {
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 400;
+  color: #202025;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-02);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+}
+
+.CONFIGURAO-DA-LOJA .frame-11 {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+}
+
+.CONFIGURAO-DA-LOJA .frame-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  bottom: 15px;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .line-2 {
+  margin-top: -1px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.CONFIGURAO-DA-LOJA .frame-14 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  bottom: 10px;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 600;
+  color: var(--neutrals-02);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+}
+
+.CONFIGURAO-DA-LOJA .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-04);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22.4px;
+}
+
+.CONFIGURAO-DA-LOJA .frame-15 {
+  display: flex;
+  width: 246px;
+  height: 29px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  position: relative;
+}
+
+.CONFIGURAO-DA-LOJA .frame-16 {
+  display: flex;
+  height: 49px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--neutrals-07);
+  border-radius: 4px;
+  bottom: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-03);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 0.6px;
+  white-space: nowrap;
+}
+
+.CONFIGURAO-DA-LOJA .arrow-drop-down {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-top: -6.5px;
+  margin-bottom: -6.5px;
+}
+
+.CONFIGURAO-DA-LOJA .frame-17 {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .frame-18 {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .frame-19 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+  background-color: #d0f4ea;
+  border-radius: 26px;
+}
+
+.CONFIGURAO-DA-LOJA .text-2 {
+  font-family: var(--is-txt-med-semi-font-family);
+  font-weight: var(--is-txt-med-semi-font-weight);
+  font-size: var(--is-txt-med-semi-font-size);
+  text-align: center;
+  line-height: var(--is-txt-med-semi-line-height);
+  position: relative;
+  width: fit-content;
+  color: var(--neutrals-02);
+  letter-spacing: var(--is-txt-med-semi-letter-spacing);
+  white-space: nowrap;
+  font-style: var(--is-txt-med-semi-font-style);
+}
+
+.CONFIGURAO-DA-LOJA .frame-20 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  bottom: 18px;
+  flex: 0 0 auto;
+}
+.CONFIGURAO-DA-LOJA .line{
+  bottom: 32px;
+}
+.CONFIGURAO-DA-LOJA .frame-21 {
+  display: flex;
+  flex-direction: column;
+  width: 323px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  bottom: 15px;
+  position: relative;
+}
+
+.CONFIGURAO-DA-LOJA .frame-22 {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--neutrals06-linhas);
+}
+
+.CONFIGURAO-DA-LOJA .stylus-2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+}
+
+.CONFIGURAO-DA-LOJA .text-3 {
+  margin-top: -4px;
+  margin-bottom: -2px;
+  font-family: var(--is-h3-font-family);
+  font-weight: var(--is-h3-font-weight);
+  font-size: var(--is-h3-font-size);
+  line-height: var(--is-h3-line-height);
+  position: relative;
+  width: fit-content;
+  color: var(--neutrals-02);
+  letter-spacing: var(--is-h3-letter-spacing);
+  white-space: nowrap;
+  cursor: pointer;
+  font-style: var(--is-h3-font-style);
+}
+
+.CONFIGURAO-DA-LOJA .frame-23 {
+  background-color: var(--neutrals-07);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+  border-radius: 26px;
+}
+
+.CONFIGURAO-DA-LOJA .frame-24 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.CONFIGURAO-DA-LOJA .frame-25 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 500;
+  color: var(--neutrals-02);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+}
+
+.CONFIGURAO-DA-LOJA .frame-26 {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .frame-27 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 32px 24px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  background-color: var(--neutrals-07);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-10 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Red Hat Text", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-03);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+}
+
+.CONFIGURAO-DA-LOJA .frame-28 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.CONFIGURAO-DA-LOJA .frame-29 {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  left: 80%;
+  top: 50px;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid;
+  cursor: pointer;
+  border-color: var(--neutrals06-linhas);
+}
+
+.CONFIGURAO-DA-LOJA .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-03);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  white-space: nowrap;
+}
+
+.PERFIL-EDIO {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.PERFIL-EDIO .frame-wrapper {
+  width: 1340px;
+  height: 980px;
+}
+
+.PERFIL-EDIO .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 32px;
+  position: relative;
+  top: 80px;
+  left: 50px;
+  background-color: var(--neutralswhite);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.PERFIL-EDIO .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #202025;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 38.4px;
+  white-space: nowrap;
+}
+
+.PERFIL-EDIO .line {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.PERFIL-EDIO .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PERFIL-EDIO .frame-2 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.PERFIL-EDIO .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PERFIL-EDIO .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Text-Medium", Helvetica;
+  font-weight: 500;
+  color: #202025;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+}
+
+.PERFIL-EDIO .frame-3 {
+  display: flex;
+  height: 49px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.PERFIL-EDIO .frame-4 {
+  display: flex;
+  height: 49px;
+  align-items: center;
+  gap: 10px;
+  padding: 19px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--neutrals-07);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.PERFIL-EDIO .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-03);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+}
+
+.PERFIL-EDIO .frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PERFIL-EDIO .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Red Hat Text-Regular", Helvetica;
+  font-weight: 400;
+  color: #202025;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+  white-space: nowrap;
+}
+
+.PERFIL-EDIO .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Red Hat Display-Bold", Helvetica;
+  font-weight: 700;
+  color: #202025;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.PERFIL-EDIO .frame-6 {
+  display: flex;
+  width: 162px;
+  height: 49px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.PERFIL-EDIO .frame-7 {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PERFIL-EDIO .frame-8 {
+  display: flex;
+  flex-direction: column;
+  width: 334px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.PERFIL-EDIO .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Red Hat Text-Medium", Helvetica;
+  font-weight: 500;
+  color: #202025;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25.6px;
+}
+
+.PERFIL-EDIO .frame-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.PERFIL-EDIO .frame-10 {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.PERFIL-EDIO .frame-11 {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--themes-primary);
+}
+
+.PERFIL-EDIO .text {
+  position: relative;
+  width: fit-content;
+  font-family: "Red Hat Display-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--neutrals-02);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.PERFIL-EDIO .frame-12 {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--primary-01);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.PERFIL-EDIO .text-2 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--is-h3-font-family);
+  font-weight: var(--is-h3-font-weight);
+  color: #202025;
+  font-size: var(--is-h3-font-size);
+  letter-spacing: var(--is-h3-letter-spacing);
+  line-height: var(--is-h3-line-height);
+  white-space: nowrap;
+  font-style: var(--is-h3-font-style);
+}
+.popup-overlay {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.popup-overlay.active {
+  display: flex;
+  align-items: first baseline;
+  justify-content: first baseline;
+  z-index: 1;
+  
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #252527;
+  color: #f1f4f4;
+}
+
+.footer h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .9rem;
+  font-family: var(--is-h3-font-family);
 }
